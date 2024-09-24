@@ -1,0 +1,5 @@
+C:/Users/KF36F/OneDrive/Desktop/MIPT/Диплом/Cmake_dip/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/KF36F/OneDrive/Desktop/MIPT/Диплом/Cmake_dip/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/KF36F/OneDrive/Desktop/MIPT/Диплом/Cmake_dip/out/build/x64-debug/Cmake_dip/CMakeFiles/Cmake_dip.dir
+C:/Users/KF36F/OneDrive/Desktop/MIPT/Диплом/Cmake_dip/out/build/x64-debug/Cmake_dip/CMakeFiles/edit_cache.dir
+C:/Users/KF36F/OneDrive/Desktop/MIPT/Диплом/Cmake_dip/out/build/x64-debug/Cmake_dip/CMakeFiles/rebuild_cache.dir
