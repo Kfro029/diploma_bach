@@ -1,7 +1,7 @@
 ﻿// Cmake_dip.cpp: определяет точку входа для приложения.
 //
 
-#include "Cmake_dip.h"
+#include <iostream>
 
 using namespace std;
 
