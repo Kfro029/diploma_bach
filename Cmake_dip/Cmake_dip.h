@@ -4,6 +4,7 @@
 #pragma once
 #include <vector>
 #include <cmath>
+#include "E_f.h"
 
 // Число частиц
 int N = 10;
@@ -23,20 +24,24 @@ double L = 10.0;
 
 //Электрическое поле
 double E0 = 1;
-double E(double x) {
-	return (E0 * (x - L / 2));
+double E0 = 1;
+std::vector <double> E_vec;
+
+void nothing2(){
+	for (int i = 0; i - 1 < int(L / dx); i++) {
+	E_vec.push_back(E0 * (i * dx - L / 2));
 }
 
-void Move(std::vector<double> V_ions, std::vector<double> V_el, std::vector<double> X_ions, std::vector<double> X_el) {
-	for (double tim = 0.0; tim < T; tim += dt) {
-		for (std::size_t i = 0; i < X_ions.size(); i++) {
-			V_ions[i] += E(X_ions[i]) * q / m_ion * dt;
-			V_el[i] -= E(X_el[i]) * q / m_el * dt;
-			X_ions[i] += V_ions[i] * dt;
-			X_el[i] += V_el[i] * dt;
-			
+	void Move(std::vector<double> V_ions, std::vector<double> V_el, std::vector<double> X_ions, std::vector<double> X_el){
+		for (double tim = 0.0; tim < T; tim += dt) {
+			for (std::size_t i = 0; i < X_ions.size(); i++) {
+				V_ions[i] += E(X_ions[i]) * q / m_ion * dt;
+				V_el[i] -= E(X_el[i]) * q / m_el * dt;
+				X_ions[i] += V_ions[i] * dt;
+				X_el[i] += V_el[i] * dt;
+
+			}
 		}
-	}
-}
+	};
 
 // TODO: установите здесь ссылки на дополнительные заголовки, требующиеся для программы.
