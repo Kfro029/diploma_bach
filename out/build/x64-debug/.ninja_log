@@ -1,4 +1,7 @@
 # ninja log v5
-4	152	7488894468950473	build.ninja	3b434f2215d99e6e
-2	857	7488894477997543	Cmake_dip/CMakeFiles/Cmake_dip.dir/Cmake_dip.cpp.obj	61bc00417dc69151
-857	1206	7488894481259342	Cmake_dip/Cmake_dip.exe	1957b80906044d2b
+4	152	7488940787294622	build.ninja	3b434f2215d99e6e
+2	179	7488929314254754	Cmake_dip/Cmake_dip.exe	1957b80906044d2b
+2	617	7488929022367328	Cmake_dip/CMakeFiles/Cmake_dip.dir/Cmake_dip.cpp.obj	61bc00417dc69151
+7	614	7488929022337343	Cmake_dip/CMakeFiles/Cmake_dip.dir/new_one.cpp.obj	90f9948d7601749b
+2	585	7488931306150677	Cmake_dip/CMakeFiles/Cmake_dip.dir/Source1.cpp.obj	7c745dff41a8e87b
+2	191	7488940827697783	Cmake_dip/Cmake_dip.exe	1957b80906044d2b

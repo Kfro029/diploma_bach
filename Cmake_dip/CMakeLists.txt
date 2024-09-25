@@ -3,7 +3,7 @@
 #
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Cmake_dip "Cmake_dip.cpp" "Cmake_dip.h")
+add_executable (Cmake_dip "Cmake_dip.cpp" "Cmake_dip.h"  )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Cmake_dip PROPERTY CXX_STANDARD 20)
