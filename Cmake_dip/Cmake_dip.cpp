@@ -1,20 +1,21 @@
 ﻿// Cmake_dip.cpp: определяет точку входа для приложения.
 //
 
-#include <iostream>
-#include <vector>
 #include "Cmake_dip.h" 
 
-// Число частиц
-// int N = 10;
 
+/*
+double E(double x) {
+	return (E0 * (x - L / 2));
+}
+*/
 
 int main(){
 
-	std::vector<float> X_ions;
-	std::vector<float> X_el;
-	std::vector<float> V_ions (N, 0.0);
-	std::vector<float> V_el(N, 0.0);
+	std::vector<double> X_ions;
+	std::vector<double> X_el;
+	std::vector<double> V_ions (N, 0.0);
+	std::vector<double> V_el(N, 0.0);
 
 
 	for (int i = 0; i < N; i++) {
