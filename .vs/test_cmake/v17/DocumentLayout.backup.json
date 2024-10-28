@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "test_cmake.cpp",
               "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp",
               "RelativeToolTip": "test_cmake.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwGcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-27T19:55:34.127Z",
               "IsPinned": true,
@@ -65,8 +65,7 @@
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-27T20:27:18.932Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -79,8 +78,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-27T20:56:22.946Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -92,8 +94,7 @@
               "RelativeToolTip": "CMakeLists.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-28T11:16:26.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T11:16:26.684Z"
             },
             {
               "$type": "Document",
@@ -109,10 +110,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Constants.h",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "Constants.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-28T09:36:42.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T09:36:42.177Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "CIC.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-28T09:31:07.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T09:31:07.549Z"
             }
           ]
         }

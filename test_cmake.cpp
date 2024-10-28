@@ -5,11 +5,14 @@
 #include <random>
 #include <fstream>
 #include "CIC.h"
+#include "Fi.h"
 //using namespace std;
 
 
-int main()
-{
+int main(){
+
+	/*
+
 	std::vector<double> X_ions;
 	std::vector<double> X_el;
 
@@ -41,7 +44,7 @@ int main()
 	rho1.open("rho.txt");
 
 
-	//std::cout << X_el[0] << ":начало ";
+
 	for (double time = dt; time < T; time += dt) {
 		Move(X_ions, X_el, V_ions, V_el);
 
@@ -80,5 +83,26 @@ int main()
 	data_ions.close();
 	data_el.close();
 	rho1.close();
+	*/
 
+	std::ofstream fi1;
+	fi1.open("fi.txt");
+
+	std::ofstream rho1;
+	rho1.open("rho.txt");
+	
+
+	std::vector <double>fi(20, 0.0);
+	std::vector<long double> rho(20);
+	for (std::size_t i = 0; i < rho.size(); i++) {
+		rho[i] = cos(i * 2.0 / 20.0 * 3.14);
+	}
+
+	Fi(fi, rho);
+	for (std::size_t i = 0; i < rho.size(); i++) {
+		fi1 << i << " " << fi[i] << std::endl;
+		rho1 << i << " " << rho[i] << std::endl;
+	}
+	fi1.close();
+	rho1.close();
 }
