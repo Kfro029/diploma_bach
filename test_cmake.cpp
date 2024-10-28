@@ -4,9 +4,9 @@
 #include "Move.h"
 #include <random>
 #include <fstream>
+#include "CIC.h"
 //using namespace std;
 
-double T = 10.0;
 
 int main()
 {
@@ -37,14 +37,24 @@ int main()
 	std::ofstream data_el;
 	data_el.open("el.txt");
 
+	std::ofstream rho1;
+	rho1.open("rho.txt");
 
-	std::cout << X_el[0] << ":начало ";
+
+	//std::cout << X_el[0] << ":начало ";
 	for (double time = dt; time < T; time += dt) {
 		Move(X_ions, X_el, V_ions, V_el);
 
-		//подсчет концентрации
+		//подсчет концентрации(штук в dx) и плотности заряда
+		//концентрации
 		std::vector<int> n_el(num_ceil, 0);
 		std::vector<int> n_ions(num_ceil, 0);
+
+		//плотность заряда
+		std::vector<long double> rho(num_ceil, 0.0);
+		CIC(rho, X_ions, X_el);
+
+
 		for (std::size_t i = 0; i < X_ions.size(); i++) {
 			int ceil_ion = X_ions[i] / dx;
 			int ceil_el = X_el[i] / dx;
@@ -55,13 +65,20 @@ int main()
 		for (std::size_t p = 0; p < n_el.size(); p++) {
 			data_el << n_el[p] << " ";
 			data_ions << n_ions[p] << " ";
+			rho1 << rho[p] << " ";
 
 		}
 		data_el << std::endl;
 		data_ions << std::endl;
+		rho1 << std::endl;
+
+
+		
+
 	}
 
 	data_ions.close();
 	data_el.close();
+	rho1.close();
 
 }

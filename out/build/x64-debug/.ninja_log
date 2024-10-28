@@ -1,13 +1,9 @@
 # ninja log v5
-1	781	7518050994396879	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-782	1017	7518050996246224	test_cmake.exe	915a09bb6d2e5197
-2	1074	7518064159449244	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-1075	1256	7518064160979256	test_cmake.exe	915a09bb6d2e5197
-2	769	7518064895197355	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-770	1116	7518064898087349	test_cmake.exe	915a09bb6d2e5197
-1	767	7518065463017899	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-768	971	7518065464647678	test_cmake.exe	915a09bb6d2e5197
-2	1113	7518076151635462	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-1114	1349	7518076153585313	test_cmake.exe	915a09bb6d2e5197
-2	749	7518079293326143	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-750	1028	7518079295586895	test_cmake.exe	915a09bb6d2e5197
+3	778	7518107835333795	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+779	980	7518107836953804	test_cmake.exe	915a09bb6d2e5197
+2	1100	7518116393047574	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1101	1335	7518116394947498	test_cmake.exe	915a09bb6d2e5197
+2	1037	7518123772376990	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1038	1211	7518123773847091	test_cmake.exe	915a09bb6d2e5197
+2	767	7518129556758303	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+767	1032	7518129558808301	test_cmake.exe	915a09bb6d2e5197
