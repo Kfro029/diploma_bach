@@ -38,7 +38,7 @@ int main()
 	data_el.open("el.txt");
 
 
-
+	std::cout << X_el[0] << ":начало ";
 	for (double time = dt; time < T; time += dt) {
 		Move(X_ions, X_el, V_ions, V_el);
 

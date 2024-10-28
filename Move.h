@@ -37,7 +37,10 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 		E_vec.push_back(E_0 * (i * dx - L / 2));
 	}
 	
+	// std::cout << "Начальный эл " << X_el[0] << " ";
+
 	for (std::size_t i = 0; i < X_ions.size(); i++) {
+		
 
 		int ceil_ion = X_ions[i] / dx;
 		int ceil_el = X_el[i] / dx;
@@ -47,8 +50,8 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 
 
 
-		V_ions[i] += E(E_vec[ceil_ion], E_vec[ceil_ion + 1], x_ion_loc) * q * m_ion * dt;
-		V_el[i] -= E(E_vec[ceil_el], E_vec[ceil_el + 1], x_el_loc) * q * m_el * dt;
+		V_ions[i] += E(E_vec[ceil_ion], E_vec[ceil_ion + 1], x_ion_loc) * q / m_ion * dt;
+		V_el[i] -= E(E_vec[ceil_el], E_vec[ceil_el + 1], x_el_loc) * q / m_el * dt;
 
 		X_ions[i] += V_ions[i] * dt;
 		X_el[i] += V_el[i] * dt;
@@ -74,7 +77,9 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 			X_el[i] *= (-1);
 			V_el[i] *= (-1);
 		}
+		
 	}
+	// std::cout << "Конечный электрон" << X_el[0] << std::endl;
 	
 
 
