@@ -21,3 +21,5 @@ double m_ion = 1.67 * pow(10, -27);
 double m_el = 9.31 * pow(10, -31);
 double q = 1.6 * pow(10, -19);
 
+double eps_0 = 8.85 * pow(10, -12);
+

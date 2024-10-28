@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CIC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test_cmake.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Fi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CIC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\E_f.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test_cmake.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakePresets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakePresets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "test_cmake.cpp",
               "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp",
               "RelativeDocumentMoniker": "test_cmake.cpp",
               "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp",
               "RelativeToolTip": "test_cmake.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAC0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-27T19:55:34.127Z",
               "IsPinned": true,
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Move.h",
               "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Move.h",
               "RelativeDocumentMoniker": "Move.h",
               "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Move.h",
               "RelativeToolTip": "Move.h",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-27T20:27:18.932Z",
               "IsPinned": true,
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "E_f.h",
               "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\E_f.h",
               "RelativeDocumentMoniker": "E_f.h",
@@ -84,41 +84,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CMakePresets.json",
-              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakePresets.json",
-              "RelativeDocumentMoniker": "CMakePresets.json",
-              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakePresets.json",
-              "RelativeToolTip": "CMakePresets.json",
+              "DocumentIndex": 3,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T09:37:30.778Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-28T11:16:26.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Constants.h",
-              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Constants.h",
-              "RelativeDocumentMoniker": "Constants.h",
-              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Constants.h",
-              "RelativeToolTip": "Constants.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "Fi.h",
+              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Fi.h",
+              "RelativeDocumentMoniker": "Fi.h",
+              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Fi.h",
+              "RelativeToolTip": "Fi.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-28T09:36:42.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CIC.h",
-              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h",
-              "RelativeDocumentMoniker": "CIC.h",
-              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h",
-              "RelativeToolTip": "CIC.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-28T09:31:07.549Z",
+              "WhenOpened": "2024-10-28T11:16:26.566Z",
               "EditorCaption": ""
             },
             {
@@ -127,15 +114,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "CMakeLists.txt",
-              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CMakeLists.txt",
-              "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-28T07:51:18.303Z",
+              "DocumentIndex": 2,
+              "Title": "Constants.h",
+              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Constants.h",
+              "RelativeDocumentMoniker": "Constants.h",
+              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\Constants.h",
+              "RelativeToolTip": "Constants.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-28T09:36:42.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CIC.h",
+              "DocumentMoniker": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h",
+              "RelativeDocumentMoniker": "CIC.h",
+              "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\CIC.h",
+              "RelativeToolTip": "CIC.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-28T09:31:07.549Z",
               "EditorCaption": ""
             }
           ]
