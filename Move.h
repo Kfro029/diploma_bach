@@ -11,13 +11,8 @@
 
 using std::vector;
 
-void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<double>& V_ions, std::vector<double>& V_el) {
-	std::vector<double> E_vec;
-	int num_ceil = L / dx + 1;
+void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<double>& V_ions, std::vector<double>& V_el, std::vector<double>& E_vec) {
 	
-	for (int i = 0; i - 1 < num_ceil; i++) {
-		E_vec.push_back(E_0 * (i * dx - L / 2));
-	}
 	
 	// std::cout << "Начальный эл " << X_el[0] << " ";
 
