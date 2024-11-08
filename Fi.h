@@ -5,7 +5,7 @@
 
 // using std::vector;
 
-void Fi(std::vector<double>& fi, std::vector<double>& rho, std::vector<double> p, std::vector<double> q) {
+void Fi(std::vector<double>& fi, std::vector<double>& rho_ions, std::vector<double>& rho_el, std::vector<double> rho, std::vector<double> p, std::vector<double> q) {
 	/*
 	std::vector<double> p(rho.size() - 2, 0.0);
 	std::vector<double> q(rho.size() -2, 0.0);
@@ -30,7 +30,14 @@ void Fi(std::vector<double>& fi, std::vector<double>& rho, std::vector<double> p
 	//std::vector<double> p(rho.size() - 2, 0.0);
 	//std::vector<double> q(rho.size() - 2, 0.0);
 
+
+	for (std::size_t i = 0; i < rho.size(); i++) {
+		rho[i] += rho_el[i] + rho_ions[i];
+	}
+
 	//ÃÓ
+	
+
 	fi[0] = 0.0;
 	fi[fi.size() - 1] = 0.0;
 

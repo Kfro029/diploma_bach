@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <vector>
-#include "E_f.h"
+#include "E_for.h"
 #include <cmath>
 
 
@@ -27,8 +27,8 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 
 
 
-		V_ions[i] += E(E_vec[ceil_ion], E_vec[ceil_ion + 1], x_ion_loc) * q / m_ion * dt;
-		V_el[i] -= E(E_vec[ceil_el], E_vec[ceil_el + 1], x_el_loc) * q / m_el * dt;
+		V_ions[i] += E_for(E_vec[ceil_ion], E_vec[ceil_ion + 1], x_ion_loc) * q / m_ion * dt;
+		V_el[i] -= E_for(E_vec[ceil_el], E_vec[ceil_el + 1], x_el_loc) * q / m_el * dt;
 
 		X_ions[i] += V_ions[i] * dt;
 		X_el[i] += V_el[i] * dt;
