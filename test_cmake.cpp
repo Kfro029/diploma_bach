@@ -13,7 +13,6 @@
 
 int main(){
 	
-	// заполнение начальных координат электронов и ионов случайным образом
 	std::vector<double> X_ions(N, 0.0);
 	std::vector<double> X_el(N, 0.0);
 
@@ -21,6 +20,8 @@ int main(){
 	std::vector<double> V_ions(N, 0.0);
 	std::vector<double> V_el(N, 0.0);
 
+	// заполнение начальных координат электронов и ионов случайным образом
+	/*
 	double lower_bound = 0.0;
 	double upper_bound = L;
 	std::uniform_real_distribution<double> unif(lower_bound, upper_bound);
@@ -35,6 +36,16 @@ int main(){
 		double b = unif(re);
 		X_el[i] = b;
 	}
+	*/
+
+	for (int i = 0; i < N; i++) {
+		X_ions[i] = (i * 1.0) / N * L;
+		X_el[i] = (i * 1.0) / N * L;
+	}
+	for (int i = 0; i < N; i++) {
+		X_el[i] += 0.01 * cos(X_el[i]);
+	}
+
 	//
 
 	//векторы данных
@@ -71,6 +82,12 @@ int main(){
 
 	std::ofstream rho_el1;
 	rho_el1.open("rho_el.txt");
+
+	std::ofstream n_el1;
+	n_el1.open("n_el.txt");
+
+	std::ofstream n_ions1;
+	n_ions1.open("n_ions.txt");
 
 	std::ofstream fi1;
 	fi1.open("fi.txt");
@@ -121,6 +138,8 @@ int main(){
 			rho_ions1 << rho_ions[p] << " ";
 			rho_el1 << rho_el[p] << " ";
 			fi1 << fi[p] << " ";
+			n_ions1 << n_ions[p] << " ";
+			n_el1 << n_el[p] << " ";
 
 		}
 		data_el << std::endl;
@@ -128,6 +147,8 @@ int main(){
 		rho_ions1 << std::endl;
 		rho_el1 << std::endl;
 		fi1 << std::endl;
+		n_ions1 << std::endl;
+		n_el1 << std::endl;
 
 				
 
@@ -138,6 +159,8 @@ int main(){
 	rho_ions1.close();
 	rho_el1.close();
 	fi1.close();
+	n_ions1.close();
+	n_el1.close();
 	
 	/*
 	std::ofstream fi1;
