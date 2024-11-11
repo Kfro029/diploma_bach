@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "test_cmake.cpp",
               "ToolTip": "C:\\Users\\KF36F\\OneDrive\\Desktop\\MIPT\\\u0414\u0438\u043F\u043B\u043E\u043C\\test_cmake\\test_cmake.cpp",
               "RelativeToolTip": "test_cmake.cpp",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAKIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAJgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-27T19:55:34.127Z",
               "IsPinned": true,
@@ -81,6 +81,10 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Constants.h",
@@ -92,10 +96,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-10T07:45:13.34Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",

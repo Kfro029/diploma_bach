@@ -105,7 +105,7 @@ int main(){
 
 
 
-	for (double time = dt; time < T; time += dt) {
+	for (int i = 1; i < (100.0 * T / dt); i++) {
 
 		//двигаем заряды в "старых" полях
 		Move(X_ions, X_el, V_ions, V_el, E_vec);
@@ -130,26 +130,27 @@ int main(){
 			n_el[ceil_el] += 1;
 			n_ions[ceil_ion] += 1;
 		}
+		if ((i % 10) == 0) {
 
-		//запись данных
-		for (std::size_t p = 0; p < n_el.size(); p++) {
-			data_el << n_el[p] << " ";
-			data_ions << n_ions[p] << " ";
-			rho_ions1 << rho_ions[p] << " ";
-			rho_el1 << rho_el[p] << " ";
-			fi1 << fi[p] << " ";
-			n_ions1 << n_ions[p] << " ";
-			n_el1 << n_el[p] << " ";
+			//запись данных
+			for (std::size_t p = 0; p < n_el.size(); p++) {
+				data_el << n_el[p] << " ";
+				data_ions << n_ions[p] << " ";
+				rho_ions1 << rho_ions[p] << " ";
+				rho_el1 << rho_el[p] << " ";
+				fi1 << fi[p] << " ";
+				n_ions1 << n_ions[p] << " ";
+				n_el1 << n_el[p] << " ";
 
+			}
+			data_el << std::endl;
+			data_ions << std::endl;
+			rho_ions1 << std::endl;
+			rho_el1 << std::endl;
+			fi1 << std::endl;
+			n_ions1 << std::endl;
+			n_el1 << std::endl;
 		}
-		data_el << std::endl;
-		data_ions << std::endl;
-		rho_ions1 << std::endl;
-		rho_el1 << std::endl;
-		fi1 << std::endl;
-		n_ions1 << std::endl;
-		n_el1 << std::endl;
-
 				
 
 	}
