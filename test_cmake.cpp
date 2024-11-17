@@ -20,6 +20,8 @@ int main(){
 	std::vector<double> V_ions(N, 0.0);
 	std::vector<double> V_el(N, 0.0);
 
+
+
 	// заполнение начальных координат электронов и ионов случайным образом
 	/*
 	double lower_bound = 0.0;
@@ -38,32 +40,55 @@ int main(){
 	}
 	*/
 
+
+	
+
 	for (int i = 0; i < N; i++) {
 		X_ions[i] = (i * 1.0) / N * L;
 		X_el[i] = (i * 1.0) / N * L;
 	}
 	for (int i = 0; i < N; i++) {
-		X_el[i] += 0.01 * cos(X_el[i]);
+		X_el[i] += 0.01 * L * sin(X_el[i] / L * 2 * 3.1415926536 * k);
 	}
 
 	//
 
 	//векторы данных
-	int num_ceil = L / dx + 1;
+	std::vector<double> E_vec(num_ceil + 1, 0.0);
 
-	std::vector<double> E_vec(num_ceil, 0.0);
+	std::vector<double> rho_ions(num_ceil + 1, 0.0);
+	std::vector<double> rho_el(num_ceil + 1, 0.0);
+	std::vector<double> rho(num_ceil + 1, 0.0);
 
-	std::vector<double> rho_ions(num_ceil, 0.0);
-	std::vector<double> rho_el(num_ceil, 0.0);
-	std::vector<double> rho(num_ceil, 0.0);
+	std::vector<double> p(num_ceil- 1, 0.0);
+	std::vector<double> q(num_ceil - 1, 0.0);
 
-	std::vector<double> p(num_ceil- 2, 0.0);
-	std::vector<double> q(num_ceil - 2, 0.0);
+	std::vector<int> n_el(num_ceil + 1, 0);
+	std::vector<int> n_ions(num_ceil + 1, 0);
 
-	std::vector<int> n_el(num_ceil, 0);
-	std::vector<int> n_ions(num_ceil, 0);
+	std::vector <double>fi(num_ceil + 1, 0.0);
 
-	std::vector <double>fi(num_ceil, 0.0);
+	/*
+	//проверим метод прогонки
+	for (int i = 0; i < num_ceil + 1; i++) {
+		rho_el[i] = 10 * sin(i / (num_ceil * 1.0) * 2 * 3.1415926536 * k);
+	}
+	Fi(fi, rho_ions, rho_el, rho, p, q);
+
+	std::ofstream fi3;
+	fi3.open("fi.txt");
+
+	std::ofstream fi2;
+	fi2.open("rho.txt");
+
+	for (std::size_t i = 0; i < fi.size(); i++) {
+		fi3 << fi[i] << " ";
+		fi2 << rho_el[i] << " ";
+	}
+	fi3.close();
+	fi2.close();
+	return 0;
+	*/
 
 	//подсчет плотности заряда и полей
 	CIC(rho_ions, rho_el, X_ions, X_el);
@@ -101,11 +126,16 @@ int main(){
 
 	}
 
+	data_el << std::endl;
+	data_ions << std::endl;
+	rho_ions1 << std::endl;
+	rho_el1 << std::endl;
+	fi1 << std::endl;
 
 
 
 
-	for (int i = 1; i < (100.0 * T / dt); i++) {
+	for (int i = 1; i < (T / dt); i++) {
 
 		//двигаем заряды в "старых" полях
 		Move(X_ions, X_el, V_ions, V_el, E_vec);
@@ -113,14 +143,19 @@ int main(){
 		//обнуление нужных векторов
 		std::fill(fi.begin(), fi.end(), 0.0);
 		std::fill(rho.begin(), rho.end(), 0.0);
+		std::fill(rho_ions.begin(), rho_ions.end(), 0.0);
+		std::fill(rho_el.begin(), rho_el.end(), 0.0);
 		std::fill(n_el.begin(), n_el.end(), 0.0);
 		std::fill(n_ions.begin(), n_ions.end(), 0.0);
 
-		//плотность заряда
+		//плотность заряда (в условных зайчиках)
 		CIC(rho_ions, rho_el, X_ions, X_el);
 
-		//потенциал
+		//потенциал (в вольтах)
 		Fi(fi, rho_ions, rho_el, rho, p, q);
+
+		//подсчет электрического поля
+		E(fi, E_vec);
 
 		//подсчет концентрации
 		for (std::size_t i = 0; i < X_ions.size(); i++) {
@@ -130,10 +165,10 @@ int main(){
 			n_el[ceil_el] += 1;
 			n_ions[ceil_ion] += 1;
 		}
-		if ((i % 10) == 0) {
+		
 
 			//запись данных
-			for (std::size_t p = 0; p < n_el.size(); p++) {
+			for (std::size_t p = 0; p < num_ceil + 1; p++) {
 				data_el << n_el[p] << " ";
 				data_ions << n_ions[p] << " ";
 				rho_ions1 << rho_ions[p] << " ";
@@ -150,7 +185,7 @@ int main(){
 			fi1 << std::endl;
 			n_ions1 << std::endl;
 			n_el1 << std::endl;
-		}
+		
 				
 
 	}

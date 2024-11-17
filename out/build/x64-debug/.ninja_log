@@ -1,3 +1,11 @@
 # ninja log v5
-3	1263	7530138814980019	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
-1264	1643	7530138818250228	test_cmake.exe	915a09bb6d2e5197
+2	1158	7534656721300023	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1158	1580	7534656724810029	test_cmake.exe	915a09bb6d2e5197
+2	1165	7535511954467948	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1166	1445	7535511956687120	test_cmake.exe	915a09bb6d2e5197
+2	1321	7535530297046765	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1322	1611	7535530299516766	test_cmake.exe	915a09bb6d2e5197
+1	759	7535554820798349	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+760	1005	7535554822948371	test_cmake.exe	915a09bb6d2e5197
+2	1091	7535569078066871	CMakeFiles/test_cmake.dir/test_cmake.cpp.obj	fc38b5036c9446a9
+1097	1343	7535569080046889	test_cmake.exe	915a09bb6d2e5197
