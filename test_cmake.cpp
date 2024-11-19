@@ -148,7 +148,7 @@ int main(){
 		std::fill(n_el.begin(), n_el.end(), 0.0);
 		std::fill(n_ions.begin(), n_ions.end(), 0.0);
 
-		//плотность заряда (в условных зайчиках)
+		//плотность заряда (в Кл/(м^3 * eps_0))
 		CIC(rho_ions, rho_el, X_ions, X_el);
 
 		//потенциал (в вольтах)
