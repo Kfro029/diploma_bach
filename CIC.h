@@ -23,8 +23,8 @@ void CIC(std::vector< double>& rho_ions, std::vector< double>& rho_el, std::vect
 	}
 	
 	for (std::size_t i = 0; i < rho_el.size(); i++) {
-		rho_el[i] *= n_2;
-		rho_ions[i] *= n_2;
+		rho_el[i] *= (- n_2);
+		rho_ions[i] *= (-n_2);
 	}
 	
 

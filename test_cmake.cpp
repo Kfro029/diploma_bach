@@ -48,7 +48,7 @@ int main(){
 		X_el[i] = (i * 1.0) / N * L;
 	}
 	for (int i = 0; i < N; i++) {
-		X_el[i] += 0.01 * L * sin(X_el[i] / L * 2 * 3.1415926536 * k);
+		X_el[i] += 0.0005 * L * sin(X_el[i] / L * 2 * 3.1415926536 * k);
 	}
 
 	//
@@ -148,7 +148,7 @@ int main(){
 		std::fill(n_el.begin(), n_el.end(), 0.0);
 		std::fill(n_ions.begin(), n_ions.end(), 0.0);
 
-		//плотность заряда (в Кл/(м^3 * eps_0))
+		//плотность заряда (в Кл/(м^3 * eps_0 * (-1)))
 		CIC(rho_ions, rho_el, X_ions, X_el);
 
 		//потенциал (в вольтах)
@@ -158,15 +158,15 @@ int main(){
 		E(fi, E_vec);
 
 		//подсчет концентрации
-		for (std::size_t i = 0; i < X_ions.size(); i++) {
-			int ceil_ion = X_ions[i] / dx;
-			int ceil_el = X_el[i] / dx;
+		for (std::size_t p = 0; p < X_ions.size(); p++) {
+			int ceil_ion = X_ions[p] / dx;
+			int ceil_el = X_el[p] / dx;
 
 			n_el[ceil_el] += 1;
 			n_ions[ceil_ion] += 1;
 		}
 		
-
+		
 			//запись данных
 			for (std::size_t p = 0; p < num_ceil + 1; p++) {
 				data_el << n_el[p] << " ";
@@ -185,8 +185,8 @@ int main(){
 			fi1 << std::endl;
 			n_ions1 << std::endl;
 			n_el1 << std::endl;
+
 		
-				
 
 	}
 
