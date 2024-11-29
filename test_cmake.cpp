@@ -63,9 +63,6 @@ int main(){
 	std::vector<double> p(num_ceil- 1, 0.0);
 	std::vector<double> q(num_ceil - 1, 0.0);
 
-	std::vector<int> n_el(num_ceil + 1, 0);
-	std::vector<int> n_ions(num_ceil + 1, 0);
-
 	std::vector <double>fi(num_ceil + 1, 0.0);
 
 	/*
@@ -92,15 +89,18 @@ int main(){
 
 	//подсчет плотности заряда и полей
 	CIC(rho_ions, rho_el, X_ions, X_el);
+
+	double denom = dx *  dx * eps_0;
+
+	for (std::size_t i = 0; i < rho_el.size(); i++) {
+		rho_el[i] *= (-n_2) / denom;
+		rho_ions[i] *= (-n_2) / denom;
+	}
+
 	Fi(fi, rho_ions, rho_el, rho, p, q);
 	E(fi, E_vec);
 
 	//
-	std::ofstream data_ions;
-	data_ions.open("ions.txt");
-
-	std::ofstream data_el;
-	data_el.open("el.txt");
 
 	std::ofstream rho_ions1;
 	rho_ions1.open("rho_ions.txt");
@@ -108,26 +108,17 @@ int main(){
 	std::ofstream rho_el1;
 	rho_el1.open("rho_el.txt");
 
-	std::ofstream n_el1;
-	n_el1.open("n_el.txt");
-
-	std::ofstream n_ions1;
-	n_ions1.open("n_ions.txt");
-
 	std::ofstream fi1;
 	fi1.open("fi.txt");
 
-	for (std::size_t p = 0; p < n_el.size(); p++) {
-		data_el << n_el[p] << " ";
-		data_ions << n_ions[p] << " ";
+	for (std::size_t p = 0; p < rho_el.size(); p++) {
+		
 		rho_ions1 << rho_ions[p] << " ";
 		rho_el1 << rho_el[p] << " ";
 		fi1 << fi[p] << " ";
 
 	}
 
-	data_el << std::endl;
-	data_ions << std::endl;
 	rho_ions1 << std::endl;
 	rho_el1 << std::endl;
 	fi1 << std::endl;
@@ -145,11 +136,14 @@ int main(){
 		std::fill(rho.begin(), rho.end(), 0.0);
 		std::fill(rho_ions.begin(), rho_ions.end(), 0.0);
 		std::fill(rho_el.begin(), rho_el.end(), 0.0);
-		std::fill(n_el.begin(), n_el.end(), 0.0);
-		std::fill(n_ions.begin(), n_ions.end(), 0.0);
 
 		//плотность заряда (в Кл/(м^3 * eps_0 * (-1)))
 		CIC(rho_ions, rho_el, X_ions, X_el);
+
+		for (std::size_t i = 0; i < rho_el.size(); i++) {
+			rho_el[i] *= (-n_2) / denom;
+			rho_ions[i] *= (-n_2) / denom;
+		}
 
 		//потенциал (в вольтах)
 		Fi(fi, rho_ions, rho_el, rho, p, q);
@@ -157,46 +151,26 @@ int main(){
 		//подсчет электрического поля
 		E(fi, E_vec);
 
-		//подсчет концентрации
-		for (std::size_t p = 0; p < X_ions.size(); p++) {
-			int ceil_ion = X_ions[p] / dx;
-			int ceil_el = X_el[p] / dx;
-
-			n_el[ceil_el] += 1;
-			n_ions[ceil_ion] += 1;
-		}
-		
 		
 			//запись данных
 			for (std::size_t p = 0; p < num_ceil + 1; p++) {
-				data_el << n_el[p] << " ";
-				data_ions << n_ions[p] << " ";
 				rho_ions1 << rho_ions[p] << " ";
 				rho_el1 << rho_el[p] << " ";
 				fi1 << fi[p] << " ";
-				n_ions1 << n_ions[p] << " ";
-				n_el1 << n_el[p] << " ";
 
 			}
-			data_el << std::endl;
-			data_ions << std::endl;
 			rho_ions1 << std::endl;
 			rho_el1 << std::endl;
 			fi1 << std::endl;
-			n_ions1 << std::endl;
-			n_el1 << std::endl;
 
 		
 
 	}
 
-	data_ions.close();
-	data_el.close();
 	rho_ions1.close();
 	rho_el1.close();
 	fi1.close();
-	n_ions1.close();
-	n_el1.close();
+
 	
 	/*
 	std::ofstream fi1;
