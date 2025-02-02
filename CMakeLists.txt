@@ -12,7 +12,7 @@ endif()
 project ("test_cmake")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (test_cmake "test_cmake.cpp" "Move.h" "E_for.h" "CIC.h" "Constants.h"  "Fi.h"   "E.h")
+add_executable (test_cmake "test_cmake.cpp" "Move.h" "E_for.h" "CIC.h" "Constants.h"  "Fi.h"   "E.h" "SETV.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_cmake PROPERTY CXX_STANDARD 20)

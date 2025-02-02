@@ -35,8 +35,8 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 
 		
 		// граничные условия: жесткая стенка
-		if (X_ions[i] >= L) {
-			X_ions[i] = L - 2 * (X_ions[i] - L);
+		if (X_ions[i] >= L- eps) {
+			X_ions[i] = (L - eps) - (X_ions[i] - (L - eps));
 			V_ions[i] *= (-1);
 		}
 
@@ -46,7 +46,7 @@ void Move(std::vector<double>& X_ions, std::vector<double>& X_el, std::vector<do
 		}
 
 		if (X_el[i] >= L) {
-			X_el[i] = L - 2 * (X_el[i] - L);
+			X_el[i] = (L - eps) - (X_el[i] - (L - eps));
 			V_el[i] *= (-1);
 		}
 
